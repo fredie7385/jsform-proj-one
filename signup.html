@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formvalidationJS</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<section id="content">
+			<form action="#" method="post" accept-charset="utf-8" class="bg-light" onsubmit=" return validation()">
+				<h1 class="text-center text-success"> Sign Up Form</h1> <br>
+						<div class='form-group'>
+							<label>Username:</label>
+							<input type="text" name="user" id='username' class="form-control" autocomplete="off">
+							<span id="usernameid" class="text-danger font-weight-bold"></span>
+						</div>
+						<div class='form-group'>
+							<label>Email Address:</label>
+							<input type="email" name="email" id='email' class="form-control" autocomplete="off">
+							<span id="emailid" class="text-danger font-weight-bold"></span>
+						</div>
+						<div class='form-group'>
+							<label>Password:</label>
+							<input type="password" name="password" id='password' class="form-control" autocomplete="off" placeholder="************">
+							<span id="passwordsid" class="text-danger font-weight-bold"></span>
+						</div>
+						<div class='form-group'>
+							<label>Confirm Password:</label>
+							<input type="password" name="confirmpassword" id='confirmpassword' class="form-control" placeholder="************" autocomplete="off">
+							<span id="passwordconfirmid" class="text-danger font-weight-bold"></span>
+						</div>
+						<div class='form-group'>
+							<label>Phone No:</label>
+							<input type="number" name="phonenumber" id='phonenumber' class="form-control" autocomplete="off">
+							<span id="phonenumberid" class="text-danger font-weight-bold"></span>
+						</div>
+						<div class="button">
+							<input type="submit" name="submit" value="Submit" class="btn btn-success">
+							<a href="login.html"> Registed ?</a>
+						</div>
+			</form>
+		</section>
+	</div>
+<script src="js/signup.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
